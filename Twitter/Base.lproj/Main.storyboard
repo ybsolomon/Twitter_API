@@ -48,7 +48,7 @@
             </objects>
             <point key="canvasLocation" x="-898.46153846153845" y="32.701421800947863"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Home-->
         <scene sceneID="Imi-1w-k4U">
             <objects>
                 <tableViewController id="lDE-di-xrh" sceneMemberID="viewController">
@@ -71,7 +71,11 @@
                             <outlet property="delegate" destination="lDE-di-xrh" id="FPU-5J-u7O"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="qFE-vp-AK0"/>
+                    <navigationItem key="navigationItem" title="Home" id="qFE-vp-AK0">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="TrQ-09-Nyj">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P7a-KO-jPw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,6 +88,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TXr-5p-kCr">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.17229498739999999" green="0.70325230599999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="lDE-di-xrh" kind="relationship" relationship="rootViewController" id="Awx-cM-pIV"/>
