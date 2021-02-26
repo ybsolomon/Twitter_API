@@ -41,7 +41,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="kca-J1-GBV" kind="presentation" identifier="loginToHome" id="3U3-qo-mue"/>
+                        <segue destination="kca-J1-GBV" kind="showDetail" identifier="loginToHome" id="RJ0-qY-sSq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjw-9d-l81" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -51,7 +51,7 @@
         <!--Home-->
         <scene sceneID="Imi-1w-k4U">
             <objects>
-                <tableViewController id="lDE-di-xrh" sceneMemberID="viewController">
+                <tableViewController id="lDE-di-xrh" customClass="HomeTableViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aEr-85-KqK">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,6 +74,9 @@
                     <navigationItem key="navigationItem" title="Home" id="qFE-vp-AK0">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="TrQ-09-Nyj">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onLogout:" destination="lDE-di-xrh" id="CcI-we-axi"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
@@ -85,6 +88,7 @@
         <scene sceneID="Weo-a7-445">
             <objects>
                 <navigationController id="kca-J1-GBV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="uvT-Rz-5lT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TXr-5p-kCr">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
