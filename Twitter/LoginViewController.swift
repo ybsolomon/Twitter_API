@@ -23,27 +23,14 @@ class LoginViewController: UIViewController {
         }
     }
     
-    
     @IBAction func onLoginButton(_ sender: Any) {
         let login = "https://api.twitter.com/oauth/request_token"
         
         TwitterAPICaller.client?.login(url: login, success: {
-            
-            UserDefaults.standard.set(true, forKey: "userLoggedIn")
+            UserDefaults.standard.setValue(true, forKey: "userLoggedIn")
             self.performSegue(withIdentifier: "loginToHome", sender: self)
         }, failure: { (Error) in
             print("Could not log in!")
         })
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
