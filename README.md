@@ -22,8 +22,6 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![twitter2](/twitter2.gif)
-
 # Twitter - Part I
 
 This is a basic twitter app to read your tweets.
