@@ -28,6 +28,7 @@ class HomeTableViewController: UITableViewController {
             
             for tweet in tweets {
                 self.tweetArray.append(tweet)
+                print(tweet)
             }
             
             self.tableView.reloadData()
@@ -64,11 +65,6 @@ class HomeTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-//        print(tweetArray.count)
         return self.tweetArray.count
     }
-
-    
-
 }
