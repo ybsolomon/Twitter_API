@@ -22,7 +22,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![twitter-part-two](/twitter-part-two.gif)
+![twitter-part-two](/twitter-part-2.gif)
 
 # Twitter - Part I
 
